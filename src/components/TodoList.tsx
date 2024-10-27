@@ -19,8 +19,8 @@ const TodoList: React.FC = () => {
   };
 
   return (
-    <>
-      <button onClick={() => setIsOpenDialog(true)}>Add New Item</button>
+    <div className="root">
+      <button className="btn" onClick={() => setIsOpenDialog(true)}>Add New Item</button>
       <TodoFilter allTasks={dataList} setFilteredData={setFilteredData} />
       <ul>
         {filteredData.map((item, index) => (
@@ -40,7 +40,7 @@ const TodoList: React.FC = () => {
           handleClose={handleCloseDialog}
         />
       </TodoDialog>
-    </>
+    </div>
   );
 };
 

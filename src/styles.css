@@ -115,3 +115,30 @@
   font-weight: 400;
   line-height: normal;
 }
+
+.root {
+  /* max-width: 1280px; */
+  width: 100vw;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  justify-content: flex-start;
+  gap: 16px;
+  background-color: rgb(197, 223, 240);
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+.filter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}

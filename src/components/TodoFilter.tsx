@@ -34,9 +34,8 @@ const TodoFilter: React.FC<VisibilityFilterProps> = ({
   }, [allTasks]);
   
   return (
-    <div className="filter-container">
-      <div className="regular-filter-container">
-        <FormControl sx={{ m: 1, minWidth: 150, alignItems: "center" }}>
+   
+        <FormControl sx={{ m: 1, minWidth: 150 }}>
           <InputLabel
             // sx={{ top: -4 }}
             id="demo-simple-select-label"
@@ -56,8 +55,7 @@ const TodoFilter: React.FC<VisibilityFilterProps> = ({
             <MenuItem value={"Incompleted"}>Incompleted</MenuItem>
           </Select>
         </FormControl>
-      </div>
-    </div>
+     
   );
 };
 export default TodoFilter;
